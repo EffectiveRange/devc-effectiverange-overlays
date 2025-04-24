@@ -21,8 +21,13 @@ jobs:
 
         steps:
         - 
-            name: Checkout code
+            name: Check out the repo
             uses: actions/checkout@v4
+        - 
+            name: install qemu tools
+            run: |
+                    sudo apt update
+                    sudo apt install -y qemu-user qemu-user-static qemu-utils binfmt-support
         - 
             name: Set up Docker Buildx
             uses: docker/setup-buildx-action@v3
