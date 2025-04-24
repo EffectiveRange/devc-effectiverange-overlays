@@ -1,0 +1,39 @@
+{
+    "deps": [
+      {
+        "name": "python3-picamera2",
+        "arch": [
+          "arm64",
+          "armhf"
+        ]
+      },
+      {
+        "name": "libcap-dev",
+        "hostinstall": true
+      },
+      {
+        "name": "libcamera-dev",
+        "hostinstall": true
+      },
+      {
+        "name": "python3-opencv",
+        "hostinstall": true
+      },
+      {
+        "name": "python3-numpy",
+        "hostinstall": true
+      },
+      {
+        "name": "python3-pil",
+        "hostinstall": true
+      },
+      {
+        "name": "python3-context-logger",
+        "hostinstall": true
+      },
+      {
+        "name": "python3-common-utility",
+        "hostinstall": true
+      }
+    ]
+  }
