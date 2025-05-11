@@ -1,4 +1,7 @@
-FROM effectiverange/er-devc-armhf-bookworm:latest
+ARG BASE_DEVC_IMAGE_REPO=effectiverange/er-devc-armhf-bookworm
+ARG BASE_DEVC_IMAGE_VER=latest
+
+FROM ${BASE_DEVC_IMAGE_REPO}:${BASE_DEVC_IMAGE_VER}
 
 COPY deps.json /tmp/devc/deps.json
 RUN chroot /var/chroot/buildroot apt update  && \

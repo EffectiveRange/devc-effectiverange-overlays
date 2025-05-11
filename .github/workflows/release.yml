@@ -18,7 +18,9 @@ concurrency:
 jobs:
     build-and-publish:
         runs-on: ubuntu-latest
-
+        strategy:
+            matrix:
+              build-version: [ "armhf-bookworm", "amd64-bookworm" ]
         steps:
         - 
             name: Check out the repo
@@ -45,7 +47,7 @@ jobs:
             id: meta
             uses: docker/metadata-action@v5
             with:
-                images: effectiverange/er-devc-armhf-bookworm-vision
+                images: effectiverange/er-devc-${{ matrix.build-version }}-vision
                 flavor: |
                     latest=auto
         - 
@@ -57,6 +59,9 @@ jobs:
                 push: ${{ startsWith(github.ref, 'refs/tags/') }}
                 tags: ${{ steps.meta.outputs.tags }}
                 labels: ${{ steps.meta.outputs.labels }}
+                build-args: |
+                    BASE_DEVC_IMAGE_REPO=effectiverange/er-devc-${{ matrix.build-version }}
+                    BASE_DEVC_IMAGE_VER=latest
 
 
               
