@@ -20,7 +20,7 @@ jobs:
         runs-on: ubuntu-latest
         strategy:
             matrix:
-              build-version: [ "armhf-bookworm", "amd64-bookworm" ]
+              build-version: [ "armhf-bookworm", "amd64-bookworm", "arm64-bookworm" ]
         steps:
         - 
             name: Check out the repo
