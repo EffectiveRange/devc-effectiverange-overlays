@@ -46,7 +46,11 @@
       {
         "name": "libgstreamer1.0-dev",
         "hostinstall": true
-      }, 
+      },
+      {
+        "name": "libunwind-dev",
+        "hostinstall": true
+      },  
       {
         "name": "libgstreamer-plugins-base1.0-dev",
         "hostinstall": true
