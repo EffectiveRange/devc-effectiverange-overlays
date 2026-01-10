@@ -57,6 +57,8 @@ jobs:
             uses: docker/metadata-action@v5
             with:
                 images: effectiverange/er-devc-${{ matrix.build-version }}-vision
+                tags: |
+                    type=raw,value=${{ needs.prepare_release.outputs.tag }}
                 flavor: |
                     latest=auto
         - 
