@@ -60,7 +60,7 @@ jobs:
                 tags: |
                     type=raw,value=${{ needs.prepare_release.outputs.tag }}
                 flavor: |
-                    latest=auto
+                    latest=true
         - 
             name: Build and push Docker image
             uses: docker/build-push-action@v5
