@@ -1,67 +1,99 @@
 {
-    "deps": [
-      {
-        "name": "python3-picamera2",
-        "arch": [
-          "arm64",
-          "armhf"
-        ]
-      },
-      {
-        "name": "libcap-dev",
-        "hostinstall": true
-      },
-      {
-        "name": "libcamera-dev",
-        "hostinstall": true
-      },
-      {
-        "name": "python3-opencv",
-        "hostinstall": true
-      },
-      {
-        "name": "python3-numpy",
-        "hostinstall": true
-      },
-      {
-        "name": "python3-pil",
-        "hostinstall": true
-      },
-      {
-        "name": "python3-context-logger",
-        "hostinstall": true
-      },
-      {
-        "name": "python3-common-utility",
-        "hostinstall": true
-      },
-      {
-        "name": "gstreamer1.0-libav",
-        "hostinstall": true
-      },
-      {
-        "name": "gstreamer1.0-plugins-good",
-        "hostinstall": true  
-      },
-      {
-        "name": "libgstreamer1.0-dev",
-        "hostinstall": true
-      },
-      {
-        "name": "libunwind-dev",
-        "hostinstall": true
-      },  
-      {
-        "name": "libgstreamer-plugins-base1.0-dev",
-        "hostinstall": true
-      },
-      {
-        "name": "libgstrtspserver-1.0-dev",
-        "hostinstall": true
-      },
-      {
-        "name": "libopencv-dev",
-        "hostinstall": true  
-      }
-    ]
-  }
+  "deps": [
+    {
+      "name": "python3-picamera2",
+      "arch": [
+        "arm64",
+        "armhf"
+      ]
+    },
+    {
+      "name": "libcap-dev",
+      "hostinstall": true
+    },
+    {
+      "name": "libcamera-dev",
+      "hostinstall": true
+    },
+    {
+      "name": "python3-opencv",
+      "hostinstall": true
+    },
+    {
+      "name": "python3-numpy",
+      "hostinstall": true
+    },
+    {
+      "name": "python3-pil",
+      "hostinstall": true
+    },
+    {
+      "name": "python3-tzlocal",
+      "hostinstall": true
+    },
+    {
+      "name": "python3-scipy",
+      "hostinstall": true
+    },
+    {
+      "name": "python3-tk",
+      "hostinstall": true
+    },
+    {
+      "name": "python3-pil.imagetk",
+      "hostinstall": true
+    },
+    {
+      "name": "python3-context-logger",
+      "hostinstall": true
+    },
+    {
+      "name": "python3-common-utility",
+      "hostinstall": true
+    },
+    {
+      "name": "python3-flask",
+      "hostinstall": true
+    },
+    {
+      "name": "gstreamer1.0-tools",
+      "hostinstall": true
+    },
+    {
+      "name": "gstreamer1.0-plugins-base",
+      "hostinstall": true
+    },
+    {
+      "name": "gstreamer1.0-plugins-good",
+      "hostinstall": true
+    },
+    {
+      "name": "gstreamer1.0-plugins-bad",
+      "hostinstall": true
+    },
+    {
+      "name": "gstreamer1.0-plugins-ugly",
+      "hostinstall": true
+    },
+    {
+      "name": "gstreamer1.0-libav",
+      "hostinstall": true
+    },
+    {
+      "name": "python3-gi",
+      "hostinstall": true
+    },
+    {
+      "name": "gir1.2-gstreamer-1.0",
+      "hostinstall": true
+    },
+    {
+      "name": "gir1.2-gst-rtsp-server-1.0",
+      "hostinstall": true
+    },
+    {
+      "name": "python3-urllib3",
+      "hostinstall": true
+    }
+  ]
+}
